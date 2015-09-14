@@ -1,0 +1,2 @@
+1. Rosbag allows you to test how the robot would react without all of the extra factors that the real world brings.
+2. It does not allow you to see haw the robot would run in the real world.
