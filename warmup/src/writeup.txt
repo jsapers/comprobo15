@@ -1,0 +1,9 @@
+1. I implemnted wall following, person following, and obstacle avoidence
+2. 	For wall following, I took the shotest recorded distance, and using pi control oriented the robot to 90 degrees to it. That way the robot tries to be perpendicular to the wall.
+For person following I took the centro id of the objects in front of the Neato and then using P control told the robot to move to .5m away from it.
+For the obstacle avoidance, the robot looked to see if there were objects in front of it and then turned if there was. 
+3. I used obstacle avoidance and wall following for my finite state controler. The robot followed wall until it saw and object .5m in front of it and then it would switch to obstacle avoidence to not hit it.
+4.I included both the wall following class and the obstacle avoidance class in the new node. I added a line in each run method that returned a string that had the behavior I wanted to switch to if a condition was met. For obstacle avoidence, the condition is an object .5m ahead of the robot. For wall following, it is no object ahead of the robot. In my main section, I used if statements to decide what behavior to used based on the string returned. 
+5. The main challenge I faced was trying to associate the sensor output to the behavior when I was debugging. I learned to overcome this by simplifying the output commands and looking solely at the condions that gave certain sensor values and then extrapolating how the robot would/should react.
+6. I made simple person following programs and oobstacle avoidance. Had I had more time, I would more complex like lookin for moving objects for person following and a arbiter graph for obstacle avoindance.
+7. I learned a lot of good debugging techniques like simplifying the program until it works and then adding features. I also got much better at using classes to structure my nodes,
